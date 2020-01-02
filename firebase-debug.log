@@ -1560,3 +1560,407 @@
 [debug] [2020-01-01T12:03:32.022Z] [runtime-status] [9048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
 [debug] [2020-01-01T12:03:33.289Z] [worker-~diagnostic~-93030d40-92b9-4a0b-8b14-856dbfa1ab4f]: IDLE
 [info] Shutting down...
+[debug] [2020-01-01T20:49:18.432Z] ----------------------------------------------------------------------
+[debug] [2020-01-01T20:49:18.441Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Conny\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-01-01T20:49:18.442Z] CLI Version:   7.11.0
+[debug] [2020-01-01T20:49:18.442Z] Platform:      win32
+[debug] [2020-01-01T20:49:18.442Z] Node Version:  v10.16.0
+[debug] [2020-01-01T20:49:18.455Z] Time:          Wed Jan 01 2020 23:49:18 GMT+0300 (East Africa Time)
+[debug] [2020-01-01T20:49:18.455Z] ----------------------------------------------------------------------
+[debug] [2020-01-01T20:49:18.456Z] 
+[debug] [2020-01-01T20:49:18.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-01T20:49:18.548Z] > authorizing via signed-in user
+[debug] [2020-01-01T20:49:18.549Z] [iam] checking project chatterb-b5f90 for permissions ["firebase.projects.get"]
+[debug] [2020-01-01T20:49:18.554Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-01T20:49:18.555Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-01T20:49:19.254Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-01T20:49:19.296Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chatterb-b5f90:testIamPermissions  
+
+[debug] [2020-01-01T20:49:21.779Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-01T20:49:21.786Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chatterb-b5f90  
+ 
+[debug] [2020-01-01T20:49:22.806Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'F:\myProjects\js_proj\react_project'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "F:\myProjects\js_proj\react_project\functions" for Cloud Functions...
+[debug] [2020-01-01T20:49:24.380Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-01T20:49:24.380Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-01T20:49:24.380Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-01T20:49:24.380Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13152
+[debug] [2020-01-01T20:49:24.381Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: BUSY
+[debug] [2020-01-01T20:49:25.869Z] [runtime-status] [13152] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-01T20:49:25.876Z] [runtime-status] [13152] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-01T20:49:25.885Z] [runtime-status] [13152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-01T20:49:25.888Z] [runtime-status] [13152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-01T20:49:25.890Z] [runtime-status] [13152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/chatterb-b5f90/us-central1/api).
+[debug] [2020-01-01T20:49:31.302Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: IDLE
+[debug] [2020-01-01T20:49:55.224Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-01T20:49:55.224Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-01T20:49:55.225Z] Accepted request GET /chatterb-b5f90/us-central1/api/shouts --> api
+[debug] [2020-01-01T20:49:55.231Z] [worker-pool] addWorker(api)
+[debug] [2020-01-01T20:49:55.232Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-01T20:49:55.232Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-01T20:49:55.232Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:49:55.232Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: BUSY
+[debug] [2020-01-01T20:49:56.559Z] [runtime-status] [21096] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-01T20:49:56.564Z] [runtime-status] [21096] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-01T20:49:56.578Z] [runtime-status] [21096] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-01T20:49:56.581Z] [runtime-status] [21096] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-01T20:49:56.583Z] [runtime-status] [21096] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-01T20:49:58.142Z] [runtime-status] [21096] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-01T20:49:58.144Z] [runtime-status] [21096] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-01T20:49:58.145Z] [runtime-status] [21096] Running api in mode HTTPS
+[debug] [2020-01-01T20:49:58.208Z] [runtime-status] [21096] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:49:58.227Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-01T20:49:58.240Z] [runtime-status] [21096] Ephemeral server handling GET request
+[debug] [2020-01-01T20:50:00.526Z] [runtime-status] [21096] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-01-01T20:50:03.234Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: IDLE
+[debug] [2020-01-01T20:50:03.234Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-01T20:50:17.879Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-01T20:50:17.880Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-01T20:50:17.880Z] Accepted request POST /chatterb-b5f90/us-central1/api/login --> api
+[debug] [2020-01-01T20:50:17.881Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-01T20:50:17.882Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:50:17.882Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: BUSY
+[debug] [2020-01-01T20:50:17.885Z] [runtime-status] [21096] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-01T20:50:17.898Z] [runtime-status] [21096] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-01T20:50:17.898Z] [runtime-status] [21096] Running api in mode HTTPS
+[debug] [2020-01-01T20:50:17.898Z] [runtime-status] [21096] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:50:17.901Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-01T20:50:18.096Z] [runtime-status] [21096] Ephemeral server handling POST request
+[debug] [2020-01-01T20:50:18.113Z] [runtime-status] [21096] Ephemeral server survived.
+[info] >  { [Error: The password is invalid or the user does not have a password.]
+[info] >    code: 'auth/wrong-password',
+[info] >    message:
+[info] >     'The password is invalid or the user does not have a password.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-01T20:50:18.941Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: IDLE
+[debug] [2020-01-01T20:50:18.941Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-01T20:50:27.771Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-01T20:50:27.771Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-01T20:50:27.771Z] Accepted request POST /chatterb-b5f90/us-central1/api/login --> api
+[debug] [2020-01-01T20:50:27.771Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-01T20:50:27.772Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:50:27.773Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: BUSY
+[debug] [2020-01-01T20:50:27.773Z] [runtime-status] [21096] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-01T20:50:27.775Z] [runtime-status] [21096] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-01T20:50:27.775Z] [runtime-status] [21096] Running api in mode HTTPS
+[debug] [2020-01-01T20:50:27.776Z] [runtime-status] [21096] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:50:27.778Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-01T20:50:27.780Z] [runtime-status] [21096] Ephemeral server handling POST request
+[debug] [2020-01-01T20:50:27.781Z] [runtime-status] [21096] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-01-01T20:50:32.720Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: IDLE
+[debug] [2020-01-01T20:50:32.721Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-01T20:51:48.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-01T20:51:48.690Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-01T20:51:48.691Z] Accepted request POST /chatterb-b5f90/us-central1/api/signup --> api
+[debug] [2020-01-01T20:51:48.692Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-01T20:51:48.692Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:51:48.693Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: BUSY
+[debug] [2020-01-01T20:51:48.695Z] [runtime-status] [21096] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-01T20:51:48.697Z] [runtime-status] [21096] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-01T20:51:48.698Z] [runtime-status] [21096] Running api in mode HTTPS
+[debug] [2020-01-01T20:51:48.698Z] [runtime-status] [21096] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21096
+[debug] [2020-01-01T20:51:48.700Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-01T20:51:48.705Z] [runtime-status] [21096] Ephemeral server handling POST request
+[debug] [2020-01-01T20:51:48.709Z] [runtime-status] [21096] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~7s
+[debug] [2020-01-01T20:51:56.132Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: IDLE
+[debug] [2020-01-01T20:51:56.132Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:10:20.813Z] File F:\myProjects\js_proj\react_project\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-02T06:10:21.817Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-02T06:10:21.817Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: FINISHING
+[debug] [2020-01-02T06:10:21.818Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-02T06:10:21.818Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: FINISHING
+[debug] [2020-01-02T06:10:21.825Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-02T06:10:21.825Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-02T06:10:21.825Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-02T06:10:21.825Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21136
+[debug] [2020-01-02T06:10:21.825Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: BUSY
+[debug] [2020-01-02T06:10:21.840Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: exited
+[debug] [2020-01-02T06:10:21.841Z] [worker-api-58d8afc8-deb2-4601-9f6e-ead9ea5eaab7]: FINISHED
+[debug] [2020-01-02T06:10:21.841Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: exited
+[debug] [2020-01-02T06:10:21.841Z] [worker-~diagnostic~-b84ed1fe-c76c-4280-a9a9-73ba0a81bcff]: FINISHED
+[debug] [2020-01-02T06:10:23.208Z] [runtime-status] [21136] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:10:23.210Z] [runtime-status] [21136] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:10:23.215Z] [runtime-status] [21136] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:10:23.217Z] [runtime-status] [21136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:10:23.218Z] [runtime-status] [21136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:10:24.430Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: IDLE
+[debug] [2020-01-02T06:10:59.613Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:10:59.613Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:10:59.613Z] Accepted request GET /chatterb-b5f90/us-central1/api/shouts --> api
+[debug] [2020-01-02T06:10:59.614Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-02T06:10:59.614Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-02T06:10:59.618Z] [worker-pool] addWorker(api)
+[debug] [2020-01-02T06:10:59.618Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-02T06:10:59.618Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:10:59.618Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:10:59.618Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: BUSY
+[debug] [2020-01-02T06:11:01.006Z] [runtime-status] [13304] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:11:01.011Z] [runtime-status] [13304] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:11:01.020Z] [runtime-status] [13304] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:11:01.025Z] [runtime-status] [13304] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:11:01.027Z] [runtime-status] [13304] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:11:02.516Z] [runtime-status] [13304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:11:02.517Z] [runtime-status] [13304] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:11:02.518Z] [runtime-status] [13304] Running api in mode HTTPS
+[debug] [2020-01-02T06:11:02.525Z] [runtime-status] [13304] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:11:02.533Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:11:02.545Z] [runtime-status] [13304] Ephemeral server handling GET request
+[debug] [2020-01-02T06:11:03.220Z] [runtime-status] [13304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-01-02T06:11:06.003Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: IDLE
+[debug] [2020-01-02T06:11:06.004Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:11:36.655Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:11:36.656Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:11:36.656Z] Accepted request POST /chatterb-b5f90/us-central1/api/login --> api
+[debug] [2020-01-02T06:11:36.656Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:11:36.656Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:11:36.656Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: BUSY
+[debug] [2020-01-02T06:11:36.657Z] [runtime-status] [13304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:11:36.660Z] [runtime-status] [13304] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:11:36.660Z] [runtime-status] [13304] Running api in mode HTTPS
+[debug] [2020-01-02T06:11:36.661Z] [runtime-status] [13304] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:11:36.663Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:11:36.720Z] [runtime-status] [13304] Ephemeral server handling POST request
+[debug] [2020-01-02T06:11:36.765Z] [runtime-status] [13304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-02T06:11:38.125Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: IDLE
+[debug] [2020-01-02T06:11:38.125Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:14:24.940Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:14:24.940Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:14:24.940Z] Accepted request POST /chatterb-b5f90/us-central1/api/user/image --> api
+[debug] [2020-01-02T06:14:24.941Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:14:24.941Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:14:24.941Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: BUSY
+[debug] [2020-01-02T06:14:24.942Z] [runtime-status] [13304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:14:24.945Z] [runtime-status] [13304] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:14:24.945Z] [runtime-status] [13304] Running api in mode HTTPS
+[debug] [2020-01-02T06:14:24.946Z] [runtime-status] [13304] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\13304
+[debug] [2020-01-02T06:14:24.951Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:14:24.961Z] [runtime-status] [13304] Ephemeral server handling POST request
+[debug] [2020-01-02T06:14:25.452Z] [runtime-status] [13304] Ephemeral server survived.
+[info] >  { iss: 'https://securetoken.google.com/chatterb-b5f90',
+[info] >    aud: 'chatterb-b5f90',
+[info] >    auth_time: 1577945497,
+[info] >    user_id: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    sub: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    iat: 1577945497,
+[info] >    exp: 1577949097,
+[info] >    email: 'paglius@gmail.com',
+[info] >    email_verified: false,
+[info] >    firebase:
+[info] >     { identities: { email: [Array] }, sign_in_provider: 'password' },
+[info] >    uid: 'CKxqsJhkyVfa8RkpTCBdZXcINm63' }
+[info] >  ReferenceError: busboy is not defined
+[info] >      at exports.uploadImage (F:\myProjects\js_proj\react_project\functions\handlers\users.js:92:19)
+[info] >      at Layer.handle [as handle_request] (F:\myProjects\js_proj\react_project\functions\node_modules\express\lib\router\layer.js:95:5)
+[info] >      at next (F:\myProjects\js_proj\react_project\functions\node_modules\express\lib\router\route.js:137:13)
+[info] >      at FBAuth.admin.auth.verifyIdToken.then.then.data (F:\myProjects\js_proj\react_project\functions\util\fbAuth.js:21:20)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-01-02T06:14:27.471Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: IDLE
+[debug] [2020-01-02T06:14:27.471Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:15:43.371Z] File F:\myProjects\js_proj\react_project\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-02T06:15:44.372Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-02T06:15:44.373Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: FINISHING
+[debug] [2020-01-02T06:15:44.374Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-02T06:15:44.383Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: FINISHING
+[debug] [2020-01-02T06:15:44.413Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-02T06:15:44.413Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-02T06:15:44.413Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-02T06:15:44.413Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\14004
+[debug] [2020-01-02T06:15:44.413Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: BUSY
+[debug] [2020-01-02T06:15:44.421Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: exited
+[debug] [2020-01-02T06:15:44.421Z] [worker-~diagnostic~-e02f063f-f9b0-4752-96c0-fb1dfe5b9089]: FINISHED
+[debug] [2020-01-02T06:15:44.426Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: exited
+[debug] [2020-01-02T06:15:44.426Z] [worker-api-c12b804f-95b1-42ad-97cc-d5c28008ca45]: FINISHED
+[debug] [2020-01-02T06:15:45.547Z] [runtime-status] [14004] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:15:45.551Z] [runtime-status] [14004] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:15:45.558Z] [runtime-status] [14004] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:15:45.561Z] [runtime-status] [14004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:15:45.563Z] [runtime-status] [14004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:15:47.057Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: IDLE
+[debug] [2020-01-02T06:15:53.404Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:15:53.404Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:15:53.404Z] Accepted request POST /chatterb-b5f90/us-central1/api/user/image --> api
+[debug] [2020-01-02T06:15:53.404Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-02T06:15:53.405Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-02T06:15:53.412Z] [worker-pool] addWorker(api)
+[debug] [2020-01-02T06:15:53.413Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-02T06:15:53.413Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:15:53.413Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\15456
+[debug] [2020-01-02T06:15:53.413Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: BUSY
+[debug] [2020-01-02T06:15:54.875Z] [runtime-status] [15456] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:15:54.879Z] [runtime-status] [15456] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:15:54.886Z] [runtime-status] [15456] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:15:54.890Z] [runtime-status] [15456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:15:54.892Z] [runtime-status] [15456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:15:56.484Z] [runtime-status] [15456] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:15:56.485Z] [runtime-status] [15456] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:15:56.486Z] [runtime-status] [15456] Running api in mode HTTPS
+[debug] [2020-01-02T06:15:56.500Z] [runtime-status] [15456] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\15456
+[debug] [2020-01-02T06:15:56.516Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:15:56.550Z] [runtime-status] [15456] Ephemeral server handling POST request
+[debug] [2020-01-02T06:15:56.768Z] [runtime-status] [15456] Ephemeral server survived.
+[info] >  { iss: 'https://securetoken.google.com/chatterb-b5f90',
+[info] >    aud: 'chatterb-b5f90',
+[info] >    auth_time: 1577945497,
+[info] >    user_id: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    sub: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    iat: 1577945497,
+[info] >    exp: 1577949097,
+[info] >    email: 'paglius@gmail.com',
+[info] >    email_verified: false,
+[info] >    firebase:
+[info] >     { identities: { email: [Array] }, sign_in_provider: 'password' },
+[info] >    uid: 'CKxqsJhkyVfa8RkpTCBdZXcINm63' }
+[info] >  image
+[info] >  image005.jpg
+[info] >  image/jpeg
+[info] i  functions: Finished "api" in ~8s
+[debug] [2020-01-02T06:16:06.014Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: IDLE
+[debug] [2020-01-02T06:16:06.014Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:22:58.830Z] File F:\myProjects\js_proj\react_project\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-02T06:22:59.834Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-02T06:22:59.834Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: FINISHING
+[debug] [2020-01-02T06:22:59.835Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-02T06:22:59.835Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: FINISHING
+[debug] [2020-01-02T06:22:59.839Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-02T06:22:59.840Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-02T06:22:59.840Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-02T06:22:59.840Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\18068
+[debug] [2020-01-02T06:22:59.840Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: BUSY
+[debug] [2020-01-02T06:22:59.853Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: exited
+[debug] [2020-01-02T06:22:59.853Z] [worker-~diagnostic~-9880e6a5-30e6-4c79-a19e-041b944bf6aa]: FINISHED
+[debug] [2020-01-02T06:22:59.853Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: exited
+[debug] [2020-01-02T06:22:59.854Z] [worker-api-bff3f4cd-3496-45cc-ab39-c4f705512d8c]: FINISHED
+[debug] [2020-01-02T06:23:00.937Z] [runtime-status] [18068] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:23:00.940Z] [runtime-status] [18068] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:23:00.943Z] [runtime-status] [18068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:23:00.946Z] [runtime-status] [18068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:00.950Z] [runtime-status] [18068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:02.321Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: IDLE
+[debug] [2020-01-02T06:23:16.867Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:23:16.867Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:23:16.867Z] Accepted request POST /chatterb-b5f90/us-central1/api/user/image --> api
+[debug] [2020-01-02T06:23:16.867Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-02T06:23:16.867Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-02T06:23:16.872Z] [worker-pool] addWorker(api)
+[debug] [2020-01-02T06:23:16.872Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-02T06:23:16.872Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:23:16.872Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\14232
+[debug] [2020-01-02T06:23:16.872Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: BUSY
+[debug] [2020-01-02T06:23:18.425Z] [runtime-status] [14232] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:23:18.431Z] [runtime-status] [14232] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:23:18.439Z] [runtime-status] [14232] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:23:18.443Z] [runtime-status] [14232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:18.445Z] [runtime-status] [14232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:19.979Z] [runtime-status] [14232] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:23:19.981Z] [runtime-status] [14232] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:23:19.981Z] [runtime-status] [14232] Running api in mode HTTPS
+[debug] [2020-01-02T06:23:19.989Z] [runtime-status] [14232] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\14232
+[debug] [2020-01-02T06:23:19.998Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:23:20.024Z] [runtime-status] [14232] Ephemeral server handling POST request
+[debug] [2020-01-02T06:23:20.214Z] [runtime-status] [14232] Ephemeral server survived.
+[info] >  { iss: 'https://securetoken.google.com/chatterb-b5f90',
+[info] >    aud: 'chatterb-b5f90',
+[info] >    auth_time: 1577945497,
+[info] >    user_id: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    sub: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    iat: 1577945497,
+[info] >    exp: 1577949097,
+[info] >    email: 'paglius@gmail.com',
+[info] >    email_verified: false,
+[info] >    firebase:
+[info] >     { identities: { email: [Array] }, sign_in_provider: 'password' },
+[info] >    uid: 'CKxqsJhkyVfa8RkpTCBdZXcINm63' }
+[info] >  image
+[info] >  image005.jpg
+[info] >  image/jpeg
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-01-02T06:23:25.268Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: IDLE
+[debug] [2020-01-02T06:23:25.269Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-02T06:23:38.770Z] File F:\myProjects\js_proj\react_project\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-02T06:23:39.771Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-02T06:23:39.771Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: FINISHING
+[debug] [2020-01-02T06:23:39.772Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-02T06:23:39.772Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: FINISHING
+[debug] [2020-01-02T06:23:39.777Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-02T06:23:39.777Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-02T06:23:39.777Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-02T06:23:39.777Z] [worker-~diagnostic~-d7eb0118-6851-499e-8425-a237d338f32d]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\20932
+[debug] [2020-01-02T06:23:39.777Z] [worker-~diagnostic~-d7eb0118-6851-499e-8425-a237d338f32d]: BUSY
+[debug] [2020-01-02T06:23:39.789Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: exited
+[debug] [2020-01-02T06:23:39.789Z] [worker-~diagnostic~-51c5e242-3e36-4cb9-b589-208bab195c89]: FINISHED
+[debug] [2020-01-02T06:23:39.798Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: exited
+[debug] [2020-01-02T06:23:39.798Z] [worker-api-d5434ecb-ebe5-4c3e-84c1-0a61a55b736c]: FINISHED
+[debug] [2020-01-02T06:23:40.690Z] [runtime-status] [20932] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:23:40.692Z] [runtime-status] [20932] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:23:40.698Z] [runtime-status] [20932] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:23:40.700Z] [runtime-status] [20932] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:40.701Z] [runtime-status] [20932] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:42.024Z] [worker-~diagnostic~-d7eb0118-6851-499e-8425-a237d338f32d]: IDLE
+[debug] [2020-01-02T06:23:43.734Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-02T06:23:43.735Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-02T06:23:43.735Z] Accepted request POST /chatterb-b5f90/us-central1/api/user/image --> api
+[debug] [2020-01-02T06:23:43.735Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-02T06:23:43.736Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-02T06:23:43.752Z] [worker-pool] addWorker(api)
+[debug] [2020-01-02T06:23:43.753Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-02T06:23:43.753Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-02T06:23:43.754Z] [worker-api-f8bac2c6-71ea-4f85-b53c-38736136aae8]: Assigning socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21532
+[debug] [2020-01-02T06:23:43.755Z] [worker-api-f8bac2c6-71ea-4f85-b53c-38736136aae8]: BUSY
+[debug] [2020-01-02T06:23:44.644Z] [runtime-status] [21532] Functions runtime initialized. {"cwd":"F:\\myProjects\\js_proj\\react_project\\functions","node_version":"10.16.0"}
+[debug] [2020-01-02T06:23:44.646Z] [runtime-status] [21532] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-02T06:23:44.651Z] [runtime-status] [21532] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-02T06:23:44.653Z] [runtime-status] [21532] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:44.654Z] [runtime-status] [21532] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"F:\\myProjects\\js_proj\\react_project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-02T06:23:45.558Z] [runtime-status] [21532] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-02T06:23:45.560Z] [runtime-status] [21532] triggerDefinition {"regions":["us-central1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-02T06:23:45.560Z] [runtime-status] [21532] Running api in mode HTTPS
+[debug] [2020-01-02T06:23:45.564Z] [runtime-status] [21532] Attempting to listen to socketPath: \\?\pipe\F:\myProjects\js_proj\react_project\functions\21532
+[debug] [2020-01-02T06:23:45.571Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-02T06:23:45.582Z] [runtime-status] [21532] Ephemeral server handling POST request
+[debug] [2020-01-02T06:23:45.689Z] [runtime-status] [21532] Ephemeral server survived.
+[info] >  { iss: 'https://securetoken.google.com/chatterb-b5f90',
+[info] >    aud: 'chatterb-b5f90',
+[info] >    auth_time: 1577945497,
+[info] >    user_id: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    sub: 'CKxqsJhkyVfa8RkpTCBdZXcINm63',
+[info] >    iat: 1577945497,
+[info] >    exp: 1577949097,
+[info] >    email: 'paglius@gmail.com',
+[info] >    email_verified: false,
+[info] >    firebase:
+[info] >     { identities: { email: [Array] }, sign_in_provider: 'password' },
+[info] >    uid: 'CKxqsJhkyVfa8RkpTCBdZXcINm63' }
+[info] >  image
+[info] >  image005.jpg
+[info] >  image/jpeg
+[info] i  functions: Finished "api" in ~6s
+[debug] [2020-01-02T06:23:52.374Z] [worker-api-f8bac2c6-71ea-4f85-b53c-38736136aae8]: IDLE
+[debug] [2020-01-02T06:23:52.374Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] Shutting down...
+[debug] [2020-01-02T06:26:04.877Z] [worker-~diagnostic~-d7eb0118-6851-499e-8425-a237d338f32d]: exited
+[debug] [2020-01-02T06:26:04.877Z] [worker-~diagnostic~-d7eb0118-6851-499e-8425-a237d338f32d]: FINISHED
+[debug] [2020-01-02T06:26:04.879Z] [worker-api-f8bac2c6-71ea-4f85-b53c-38736136aae8]: exited
+[debug] [2020-01-02T06:26:04.880Z] [worker-api-f8bac2c6-71ea-4f85-b53c-38736136aae8]: FINISHED
