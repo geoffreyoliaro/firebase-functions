@@ -6,7 +6,10 @@ const {
     getAllShouts,
     postOneShout, 
     getShout,
-    commentOnShout
+    commentOnShout,
+    likeShout,
+    unLikeShout,
+    deleteShout
 } = require('./handlers/shouts');
 
 const {
@@ -26,7 +29,11 @@ app.get('/newShout/:shoutId', getShout);
 //TODO like a shout
 //TODO unlike shout
 //TODO comment on a shout
-app.post('/newShout/:shoutId/comment', FBAuth, commentOnShout)
+app.post('/newShout/:shoutId/comment', FBAuth, commentOnShout);
+app.delete('/newShout/:shoutId',FBAuth, deleteShout);
+app.get('/newShout/:shoutId/likeShout', FBAuth, likeShout);
+app.get('/newShout/:shoutId/unLikeShout', FBAuth, unLikeShout);
+
 
 
 //users routes
