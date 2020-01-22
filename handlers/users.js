@@ -69,10 +69,10 @@ exports.login =(req,res)=>{
     };
     
     const {valid,errors} =validateLoginData(user);
-        if(!valid)return res.status.json(errors);
+        if(!valid)return res.status(400).json(errors);
     
 
-    firebase.auth().signInWithEmailAndPassword(user.email,user.password)
+    firebase.auth().signInWithEmailAndPassword(user.email, user.password)
         .then(data=>{
             return data.user.getIdToken();
         })
@@ -91,11 +91,14 @@ exports.login =(req,res)=>{
 //Get any users details
 exports.getUserDetails = (req,res)=>{
     let userData = {};
-    db.doc(`/users/${req.params.handle}`).get()
+    db.doc(`/users/${req.params.handle}`)
+    .get()
     .then(doc =>{
         if(doc.exists){
             userData.user =doc.data();
-            return db.collection('shouts').where('userHandle','==',req.params.handle)
+            return db
+                .collection('shouts')
+                .where('userHandle','==',req.params.handle)
                 .orderBy('createdAt','desc')
                 .get();
         }else{
@@ -103,9 +106,9 @@ exports.getUserDetails = (req,res)=>{
 
         }
     })
-    .then(data=>{
+    .then((data)=>{
         userData.shouts =[];
-        data.forEach(doc=>{
+        data.forEach((doc)=>{
             userData.shouts.push({
                 body:doc.data().body,
                 createdAt:doc.data().createdAt,
@@ -114,7 +117,7 @@ exports.getUserDetails = (req,res)=>{
                 likeCount:doc.data().likeCount,
                 commentCount:doc.data().commentCount,
                 shoutId:doc.id
-            })
+            });
         });
         return res.json(userData);
     })
@@ -127,24 +130,32 @@ exports.getUserDetails = (req,res)=>{
 //Get own user Details
 exports.getAuthenticatedUser =(req, res) =>{
     let userData = {};
-    db.doc(`/users/${req.user.handle}`).get()
-        .then(doc=>{
+    db.doc(`/users/${req.user.handle}`)
+        .get()
+        .then((doc)=>{
             if(doc.exists){
                 userData.credentials = doc.data();
-                return db.collection('likes').where('userHandle', '==', req.user.handle).get()
+                return db
+                    .collection('likes')
+                    .where('userHandle', '==', req.user.handle)
+                    .get()
             }
         })
-        .then(data =>{
+        .then((data) =>{
             userData.likes = [];
-            data.forEach(doc =>{
+            data.forEach((doc) =>{
                 userData.likes.push(doc.data());
             });
-            return db.collection('notifications').where('recepient', '==', req.user.handle)
-                .orderBy('createdAt', 'desc').limit(10).get();
+            return db
+                .collection('notifications')
+                .where('recepient', '==', req.user.handle)
+                .orderBy('createdAt', 'desc')
+                .limit(10)
+                .get();
         })
-        .then(data=>{
+        .then((data)=>{
             userData.notifications =[];
-            data.forEach(doc=>{
+            data.forEach((doc)=>{
                 userData.notifications.push({
                     recepient: doc.data().recepient,
                     sender: doc.data().sender,
@@ -155,16 +166,15 @@ exports.getAuthenticatedUser =(req, res) =>{
                     notificationId: doc.id,
 
                 });
-                return res.json(userData);
-
-            })
+            });
+            return res.json(userData);
         })
-        .catch(err =>{
+        .catch((err) =>{
             console.error(err);
             return res.status(500).json({error: err.code});
         });
 
-}
+};
 
 //add user Details
 exports.addUserDetails =(req,res)=>{
