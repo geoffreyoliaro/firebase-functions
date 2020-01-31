@@ -14,7 +14,10 @@ exports.getAllShouts =
                 body: doc.data().body,
                 userHandle:doc.data().userHandle,
                 createdAt:doc.data().createdAt,
-                userImage:doc.data().userImage
+                userImage:doc.data().userImage,
+                commentCount:doc.data().commentCount,
+                likeCount:doc.data().likeCount
+
             });
         });
         return res.json(shouts);

@@ -2,6 +2,10 @@ const functions = require('firebase-functions');
 const FBAuth = require('./util/fbAuth');
 const app =require('express')();
 const {db} =require('./util/admin');
+//cors
+const cors = require('cors');
+app.use(cors());
+
 // const firebase = require('firebase');
 const {
     getAllShouts,
@@ -28,10 +32,7 @@ app.get('/shouts',getAllShouts);
 app.post('/newShout',FBAuth, postOneShout);
 app.get('/newShout/:shoutId', getShout);
 
-//TODO delete shout
-//TODO like a shout
-//TODO unlike shout
-//TODO comment on a shout
+
 app.post('/newShout/:shoutId/comment', FBAuth, commentOnShout);
 app.delete('/newShout/:shoutId',FBAuth, deleteShout);
 app.get('/newShout/:shoutId/likeShout', FBAuth, likeShout);
