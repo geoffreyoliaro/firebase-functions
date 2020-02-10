@@ -93,7 +93,7 @@ exports.getUserDetails = (req,res)=>{
     let userData = {};
     db.doc(`/users/${req.params.handle}`)
     .get()
-    .then(doc =>{
+    .then((doc) =>{
         if(doc.exists){
             userData.user =doc.data();
             return db
@@ -246,21 +246,22 @@ exports.uploadImage = (req,res)=>{
 
 exports.markNotificationsRead =(req,res)=>{
     let batch = db.batch();
-    req.body.forEach(notificationId=>{
+    req.body.forEach((notificationId)=>{
         const notification = db.doc(`/notifications/${notificationId}`);
         batch.update(notification, {read:true});
     });
-    batch.commit()
+    batch
+    .commit()
     .then(()=>{
         return res.json({message:'Notifications marked read'});
     })
-    .catch(err=>{
+    .catch((err)=>{
         console.error(err)
         return res.status(500).json({error:err.code});
 
-    })
+    });
 
-}
+};
 
 
 
